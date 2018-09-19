@@ -15,7 +15,7 @@ echo === Ids
 echo NAME        VALUE
 echo ──────────  ──────────────────
 echo Package Id  0HoB0000000KyjVKAS
-dprintfake "sfdx force:package:version:create - Dreamhouse -k password123 -w 10"
+dprintfake "sfdx force:package:version:create -n Dreamhouse -k password123 -w 10"
 sleep 5
 echo sfdx-project.json has been updated.
 echo Successfully created the package version [08cB0000000KyjLIAS]. Subscriber Package Version Id: 04tB0000000Y0DJIA0.
