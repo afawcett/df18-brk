@@ -19,7 +19,7 @@ echo sfdx-project.json has been updated.
 echo Successfully created the package version [08cB0000000KyjLIAS]. Subscriber Package Version Id: 04tB0000000Y0DJIA0.
 echo Package Installation URL: https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000Y0DJIA0
 echo As an alternative, you can use the "sfdx force:package:install" command.
-dprintfake "sfdx force:package:install --package Dreamhouse -u Sandbox -k password123 -w 10"
+dprintfake "sfdx force:package:install --package Dreamhouse@1.0.0-1 -u Sandbox -k password123 -w 10"
 echo This package might send or receive data from these third-party websites:
 echo 
 echo api.metamind.io
@@ -28,6 +28,6 @@ echo dreamhouzz-push-server.herokuapp.com
 echo hooks.slack.com
 echo
 echo Grant access y/n?: y
-echo Successfully installed package [04t1I0000036seVQAQ]
+echo Successfully installed package [04tB0000000Y0DJIA0]
 dprintf "sfdx force:org:open -u Sandbox -p /lightning/setup/ImportedPackage/home"
 cd ..
