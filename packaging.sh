@@ -22,7 +22,7 @@ echo Successfully created the package version [08cB0000000KyjLIAS]. Subscriber P
 echo Package Installation URL: https://login.salesforce.com/packaging/installPackage.apexp?p0=04tB0000000Y0DJIA0
 echo As an alternative, you can use the "sfdx force:package:install" command.
 dprintf "code ."
-dprintfake "sfdx force:package:install --package Dreamhouse@1.0.0-1 -u Sandbox -k password123 -w 10"
+dprintfake "sfdx force:package:install --package Dreamhouse@1.0.0-1 -u Sandbox2 -k password123 -w 10"
 sleep 2
 echo This package might send or receive data from these third-party websites:
 echo 
@@ -34,5 +34,5 @@ echo
 echo Grant access y/n?: y
 sleep 5
 echo Successfully installed package [04tB0000000Y0DJIA0]
-dprintf "sfdx force:org:open -u Sandbox -p /lightning/setup/ImportedPackage/home"
+dprintf "sfdx force:org:open -u Sandbox2 -p /lightning/setup/ImportedPackage/home"
 cd ..
