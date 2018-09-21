@@ -3,6 +3,7 @@ source ./autopilot.sh
 
 # Cleanup
 rm -rf ./dreamhouse-sfdx
+node ./testing.js
 
 # Demo script
 dprintf "git clone https://github.com/dreamhouseapp/dreamhouse-sfdx"
